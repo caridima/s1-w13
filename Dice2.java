@@ -3,16 +3,17 @@ import java.util.Random;
 public class Dice2 {
 
    private Random randGen;
-   private BarChart6 bars;
+   private BarChart12 bars;
 
    public Dice2 ( ) {
       randGen = new Random ( );
-      bars = new BarChart6();
+      bars = new BarChart12();
    }
 
    public int nextRoll( ) {
-      // You supply this code.
-return -1; 
+      int x = 0;
+      x = randGen.nextInt(6) +1 + randGen.nextInt(6)+1;
+      return x;
    }
 	
    public void tester (int howMany) {
